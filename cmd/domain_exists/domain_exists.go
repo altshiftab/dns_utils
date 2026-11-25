@@ -19,16 +19,16 @@ import (
 	altshiftContext "github.com/altshiftab/utils_go/pkg/context"
 	altshiftErrors "github.com/altshiftab/utils_go/pkg/errors"
 	altshiftLog "github.com/altshiftab/utils_go/pkg/log"
-	motmedelErrorLogger "github.com/altshiftab/utils_go/pkg/log/error_logger"
-	motmedelLogHandler "github.com/altshiftab/utils_go/pkg/log/handler"
+	altshiftErrorLogger "github.com/altshiftab/utils_go/pkg/log/error_logger"
+	altshiftLogHandler "github.com/altshiftab/utils_go/pkg/log/handler"
 	"golang.org/x/sync/semaphore"
 )
 
 func main() {
-	logger := &motmedelErrorLogger.Logger{
+	logger := &altshiftErrorLogger.Logger{
 		Logger: slog.New(
 			&altshiftLog.ContextHandler{
-				Next: motmedelLogHandler.New(slog.NewJSONHandler(os.Stderr, nil)),
+				Next: altshiftLogHandler.New(slog.NewJSONHandler(os.Stderr, nil)),
 				Extractors: []altshiftLog.ContextExtractor{
 					dnsUtilsLog.DnsContextExtractor,
 					&altshiftLog.ErrorContextExtractor{

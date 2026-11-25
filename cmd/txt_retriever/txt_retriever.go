@@ -20,12 +20,12 @@ import (
 	altshiftContext "github.com/altshiftab/utils_go/pkg/context"
 	altshiftErrors "github.com/altshiftab/utils_go/pkg/errors"
 	altshiftLog "github.com/altshiftab/utils_go/pkg/log"
-	motmedelErrorLogger "github.com/altshiftab/utils_go/pkg/log/error_logger"
+	altshiftErrorLogger "github.com/altshiftab/utils_go/pkg/log/error_logger"
 	"golang.org/x/sync/semaphore"
 )
 
 func main() {
-	logger := &motmedelErrorLogger.Logger{
+	logger := &altshiftErrorLogger.Logger{
 		Logger: slog.New(
 			&altshiftLog.ContextHandler{
 				Next: slog.NewJSONHandler(os.Stderr, nil),
