@@ -1,3 +1,5 @@
+github.com/altshiftab/dns_utils v0.1.0 h1:O7tc2aVBqSlIbxbOXM/qC4KGbE0b6TAtkLgFyERMHJI=
+github.com/altshiftab/dns_utils v0.1.0/go.mod h1:GsZ1KUsUoiPjCFunbg/5BvkNTcEq66iPm7lGPzQYx1k=
 github.com/altshiftab/utils_go v1.134.0 h1:ML6RYVlXBkZpOZSkKkCzmKyQNMboHs4ZZOpFQSYEWzo=
 github.com/altshiftab/utils_go v1.134.0/go.mod h1:lNBqVAWMIhIISNz0pOQnsqRsCPg6S50Q62GH6slGBOk=
 github.com/miekg/dns v1.1.73 h1:uhT8nJxmTrPJYClxVxTCX+CVn6qnzSiybRk72Z6DgrE=
